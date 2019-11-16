@@ -1,0 +1,24 @@
+enum ExperienceLevel {
+    ROOKIE
+    EXPERIENCED
+    PRO
+}
+
+type Member {
+    firstName: String!
+    lastName: String!
+    reactionTime: Float!
+    experienceLevel: ExperienceLevel!
+}
+
+type Team {
+    id: Int!
+    name: String!
+    members: [Member!]!
+    motto: String!
+}
+
+type Query {
+    teams: [Team!]
+    team(id: Int!): Team
+}
