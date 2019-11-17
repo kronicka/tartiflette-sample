@@ -16,6 +16,7 @@ type Team {
     name: String!
     members: [Member!]!
     motto: String!
+    practiceTime: Int!
 }
 
 type Query {

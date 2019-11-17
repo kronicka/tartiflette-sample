@@ -21,8 +21,9 @@ async def resolve_mutation_update_team(
     team_id = args["input"]["id"]
     name = args["input"].get("name")
     motto = args["input"].get("motto")
+    practice_time = args["input"].get("practiceTime")
     
-    if not (name or motto):
+    if not (name or motto or practice_time):
         raise Exception(
             "Provide at least one value for either name or "
             "motto."

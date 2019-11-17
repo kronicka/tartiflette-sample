@@ -1,0 +1,13 @@
+enum PracticeStatus {
+    PRACTICING,
+    FINISHED
+}
+
+type PracticeTimer {
+    remainingTime: Int!
+    status: PracticeStatus!
+}
+
+type Subscription {
+    launchAndWaitPracticeTimer(id: Int!): PracticeTimer
+}

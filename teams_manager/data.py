@@ -21,7 +21,22 @@ MEMBERS = {
 }
 
 TEAMS = [
-    {"id": 1, "name": "Cubes", "motto": "Be there or be square."},
-    {"id": 2, "name": "Filthy Acts at a Reasonable Price", "motto": "Our name is definitely not a JoJo reference."},
-    {"id": 3, "name": "Worse Company", "motto": "Imagine not using comparative adjectives."},
+    {
+        "id": 1,
+        "name": "Cubes",
+        "motto": "Be there or be square.",
+        "practiceTime": 4
+    },
+    {
+        "id": 2,
+        "name": "Filthy Acts at a Reasonable Price",
+        "motto": "Our name is definitely not a JoJo reference.",
+        "practiceTime": 2
+     },
+    {
+        "id": 3,
+        "name": "Worse Company",
+        "motto": "Imagine not using comparative adjectives.",
+        "practiceTime": 5
+    },
 ]

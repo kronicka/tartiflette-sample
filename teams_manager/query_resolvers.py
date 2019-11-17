@@ -24,7 +24,7 @@ async def resolve_query_teams(
 
 
 @Resolver("Query.team")
-async def resolver_query_team(
+async def resolve_query_team(
         parent: Optional[Any],
         args: Dict[str, Any],
         ctx: Dict[str, Any],
