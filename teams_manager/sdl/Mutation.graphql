@@ -1,0 +1,10 @@
+
+input TeamInput {
+    id: Int!
+    name: String
+    motto: String
+}
+
+type Mutation {
+    updateTeam(input: TeamInput!): Team!
+}
