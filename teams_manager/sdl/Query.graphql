@@ -4,10 +4,16 @@ enum ExperienceLevel {
     PRO
 }
 
+directive @deprecated(
+    reason: String = "No longer supported"
+) on FIELD_DEFINITION | ENUM_VALUE
+
 type Member {
     firstName: String!
     lastName: String!
+    nickname: String!
     reactionTime: Float!
+    title: String! @deprecated(reason: "Use `experienceLevel instead.`")
     experienceLevel: ExperienceLevel!
 }
 
