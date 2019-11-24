@@ -1,3 +1,8 @@
+directive @rateLimiting(
+    name: String!
+    maxAttempts: Int! = 3
+    duration: Int! = 10
+) on FIELD_DEFINITION
 
 input TeamInput {
     id: Int!
@@ -6,5 +11,5 @@ input TeamInput {
 }
 
 type Mutation {
-    updateTeam(input: TeamInput!): Team!
+    updateTeam(input: TeamInput!): Team! @rateLimiting(name: "update_team")
 }
